@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="javascript" href="index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="portfolio.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "yiXfoonBadRRrP-DR",
+  });
+})();
+</script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOO.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#About"> About Me</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Graphic Designer</p>
+                <h1>Hi, I'm <span>Aiswarya</span> </h1>
+                
+            </div>
+          
+        </div>
+       
+    </div>
+   
+    <!-------------about------------>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/PROFILE.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titile">About Me</h1>
+                    <p> I'm very confident and enthusiastic person and I would work very hard 
+                        so as to achieve my goal.And my vision is if we are working on something exciting
+                        that we really care about, we don't have to be pushed.So this will make success.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Graphic Designing</span><br> Product Development Designing/Logo Designing</li>
+                                <li><span> Web Development</span><br>Website site creation</li>
+                                <li><span> Photoraphy</span><br>Portrait/Nature/Wildlife</li>
+                                <li><span> Anchoring</span><br> News/Programmes</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span> 2019-2024</span><br> Executive Graphic Desiner at VKC Footwear </li>
+                                <li><span> Freelancer</span><br>Logo Desining</li>
+                                <li><span> Freelancer</span><br>Photoraphy</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> 2014-2017</span><br> Under Graduation in Bsc.Visual Media and Communications<br>at Amrita School of Arts and Sciences Kochi </li>
+                                <li><span> 2017-2019</span><br>Post Graduation in MA.Journalism and Mass Communiaction<br>at St.Joseph's College,Irinjalakuda</li>
+                            </ul>
+                        </div>
+                        <a href="images/Aiswarya_Resume.pdf" download class="btn btn2">Download resume</a>
+                </div>
+                
+            </div>
+        </div>
+       
+    </div> 
+    </div>
+    <!------------portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/PORTFOLIO-7.jpg">
+                    <div class="layer">
+                        <h3>Visual identity design</h3>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/PORTFOLIO-9.jpg">
+                    <div class="layer">
+                        <h3>Brand Advertising Design </h3>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/PORTFOLIO-14.jpg">
+                    <div class="layer">
+                        <h3>Brand identity design</h3>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------Contact------------->
+    <!-- <div id="contact">
+        <div class="container">
+            <div class="raw">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sajithaiswarya104@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7907643726</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Aiswarya_Resume.pdf" download class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" id="name"name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email"name="Email" placeholder="Your email" required>
+                        <textarea name="Message"id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"> </i> Aiswarya.Made <i class="fa-regular fa-heart"></i> with own creation</p>
+        </div>
+    </div> -->
+
+
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>sajithaiswarya104@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>7907643726</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                       
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2" onclick="sendMail()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Aiswarya. Made with <i class="fa-regular fa-heart"></i> by Aiswarya</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</script>
+</body>
+</html>
